@@ -1,0 +1,6 @@
+node_modules/
+lib/
+dist/
+dist-node/
+*.error.log
+yarn.log
