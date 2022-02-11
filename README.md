@@ -1,6 +1,8 @@
 ## TodoList Example
 
-本项目为开发 [OpenSumi](https://github.com/opensumi/core) 模块的演示案例
+本项目为开发 [OpenSumi](https://github.com/opensumi/core) 模块的演示案例。
+
+![preview](https://img.alicdn.com/imgextra/i2/O1CN01IXXMCy2563jAC4FDO_!!6000000007476-2-tps-2452-1640.png)
 
 ### 项目结构
 ```bash
@@ -14,7 +16,9 @@
 │   └── node
 ├── tsconfig.json
 ├── webpack.browser.config.js
+├── webpack.ext-host.config.js
 ├── webpack.node.config.js
+├── webpack.worker-host.config.js
 ├── package.json
 └── README.md
 ```
