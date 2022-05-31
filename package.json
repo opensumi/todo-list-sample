@@ -14,7 +14,7 @@
     "prepare": "npm run compile:worker-host && npm run compile:ext-host",
     "build": "npm run compile:browser && npm run compile:node && npm run compile:worker-host && npm run compile:ext-host",
     "start:client": "webpack-dev-server --config=./webpack.browser.config.js --progress --color --watch",
-    "start:server": "NODE_ENV=development EXT_MODE=js KTLOG_SHOW_DEBUG=1 node --inspect=9991 -r ts-node/register ./src/node/index.ts",
+    "start:server": "cross-env NODE_ENV=development EXT_MODE=js KTLOG_SHOW_DEBUG=1 node --inspect=9991 -r ts-node/register ./src/node/index.ts",
     "start": "run-p start:client start:server"
   },
   "dependencies": {
@@ -66,6 +66,7 @@
     "@opensumi/ide-webview": "2.14.2",
     "@opensumi/ide-workspace": "2.14.2",
     "@opensumi/ide-workspace-edit": "2.14.2",
+    "cross-env": "^7.0.3",
     "node-fetch": "^2.6.1",
     "request": "^2.88.0"
   },
